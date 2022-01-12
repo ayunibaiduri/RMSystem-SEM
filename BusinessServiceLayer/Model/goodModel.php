@@ -12,7 +12,7 @@ class goodModel{
         $stmt = DB::run($sql, $args);
         $count = $stmt->rowCount();
         return $count;
-    }
+    }  
     
     function viewallGood(){
         //To retrieve all good information from good table and send them to goodController class.

@@ -7,7 +7,7 @@ $good = new goodController();
 $data = $good->viewGood($good_id);
 
 if(isset($_POST['update'])){
-  $good->editGood();
+  $good->editGood();   
 }
 
 if (!isset($_SESSION['username'])) {

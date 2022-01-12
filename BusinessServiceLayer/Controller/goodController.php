@@ -12,7 +12,7 @@ class goodController{
         $good->details = $_POST['details'];
         $good->quantity = $_POST['quantity'];
         $good->price = $_POST['price'];
-        $good->image = $_POST['image'];
+        $good->image = $_POST['image'];   
         if($good->addGood() > 0){
           $message = "Medicine Successfully Added!";
 		echo "<script type='text/javascript'>alert('$message');
@@ -31,7 +31,7 @@ class goodController{
         $good = new goodModel();
         $good->good_id = $good_id;
         return $good->viewGood();
-    }
+    } 
     
     function editGood(){
         //To get and set data from goodModel class.

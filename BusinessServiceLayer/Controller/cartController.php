@@ -10,7 +10,7 @@ class cartController{
         $cart->customer_id = $_SESSION['userid'];
         $cart->name = $_POST['name'];
         $cart->quantity = $_POST['quantity'];
-        $cart->price = $_POST['price'];
+        $cart->price = $_POST['price'];  
         $cart->image = $_POST['image'];
 
         if($cart->addCart() > 0){

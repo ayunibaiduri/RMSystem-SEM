@@ -7,7 +7,7 @@ $good_id = $_GET['good_id'];
 $good = new goodController();
 $cart = new cartController();
 $data = $good->viewGood($good_id); 
-$name = $_GET['good_id'];
+$name = $_GET['good_id'];   
 
   if (!isset($_SESSION['username'])) {
     $message = "You must log in first";
