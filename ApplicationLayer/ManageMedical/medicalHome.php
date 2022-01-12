@@ -7,7 +7,6 @@ if (!isset($_SESSION['username'])) {
   echo "<script type='text/javascript'>alert('$message');
   window.location = '../../ManageLogin/login.php';</script>";
 }
-//TEST JADI KE DOK CB19087 CONNECT GITHUB KE CB19099//
 
 ?>
 <!DOCTYPE html>
