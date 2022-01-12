@@ -3,7 +3,7 @@ require_once '../../BusinessServiceLayer/libs/db.php';
 class cartModel{
     //To store and retrieve all the information of cartdata.
     public $cart_id,$customer_id,$name,$quantity,$price,$image;
-    
+     
     function addCart(){
         //To get all new cart information from cartController class and save in cart table.
         $sql = "insert into cart(customer_id, product_name, product_quantity, product_price, product_image) values(:customer_id, :name, :quantity, :price, :image)";

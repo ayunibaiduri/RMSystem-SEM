@@ -34,7 +34,7 @@ class cartController{
     }
 
     
-    function updateCart(){
+    function updateCart(){ 
         // To get and set quantity from cartModel class.
         $cart = new cartModel();
         $cart->cart_id = $_POST['cart_id'];
