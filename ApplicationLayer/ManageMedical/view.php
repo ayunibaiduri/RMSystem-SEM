@@ -1,4 +1,4 @@
-<!--maintenance by- NUR AYUNI BADURI BINTI MUHAMMAD -CB19087>
+<!--maintenance by- NUR AYUNI BADURI BINTI MUHAMMAD -CB19087-->
 
 <?php
 require_once '../../BusinessServiceLayer/Controller/medicineController.php';
@@ -52,9 +52,20 @@ $name = $_GET['medicine_id'];
         </div>
       </div>
     </div>
-
-
   </div>
+
+  <style> 
+  .medback{
+  background-image: url('../../img/medhome.png');
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+</style>
+<div class="medback">
+
   <section class="type__category__area bg--white section-padding">
   <div class="wrapper wrapper--w790">
     <div class="card card-5">
@@ -103,28 +114,31 @@ $name = $_GET['medicine_id'];
               <div>
               </center>
                 <center>
-                 <?php
+            <?php
                   if ($_SESSION['usertype'] == 1) {
                     ?>
+                 
                     <input type="hidden" name="name" value="<?=$row['medicine_name']?>">
                     <input type="hidden" name="price" value="<?=$row['medicine_price']?>">
                     <input type="hidden" name="image" value="<?=$row['medicine_image']?>">
                     <input type="hidden" name="quantity" value="1">
                     <input type="hidden" name="total" value="<?=$row['medicine_price']?>">
-                    <button class="btn btn--radius-2 btn--black" type="submit" name="buy" value="Add to Cart"> Add to Cart </button>
+                    <button class="med-btn" type="submit" name="buy" value="Add to Cart"> Add to Cart </button>
                     <?php
-                  } elseif ($_SESSION['usertype'] == 2){ ?>
-                    <button class="btn btn--radius-2 btn--black"> <a href="edit.php?medicine_id=<?=$row['medicine_id']?>">Edit</a></button>
+                  } elseif ($_SESSION['usertype'] == 2){ ?><br>
+                    <button class="med-btn"> <a href="edit.php?medicine_id=<?=$row['medicine_id']?>">Edit</a></button>
                     <input type="hidden" name="medicine_id" value="<?=$row['medicine_id']?>">
-                    <button class="btn btn--radius-2 btn--black" type="submit" name="delete" value="Delete"> Delete </button>
-                    <button class="btn btn--radius-2 btn--black" > <a href="medicineList.php">Back</a></button>
+                    <button class="med-btn" type="submit" name="delete" value="Delete"> Delete </button>
+                    <br><br>
+                    
+                    <button class="med-btn"><a href="medicineList.php">Back</a></button> <br><br><br>
                     <?php
                   }?>
                 </center>
               </div>
-                </form></td>
+              </form>
             <?php } ?>
-</section>
+</section></div>
 
 <!--FOOTER-->
 <div class="footer">

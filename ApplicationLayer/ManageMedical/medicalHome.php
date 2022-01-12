@@ -19,12 +19,8 @@ if (!isset($_SESSION['username'])) {
 
 <body>
 
-
+<?php include"../../includes/header.php";?>
   <div class="wrapper" id="wrapper">
-    <?php 
-    include "../../includes/header.php";
-    ?>
-
     <div class="ht__bradcaump__wrap d-flex align-items-center">
       <div class="container">
         <div class="row">
@@ -34,9 +30,21 @@ if (!isset($_SESSION['username'])) {
           </div>
         </div>
       </div>
-  </div>
+  </div> 
 </div>
 
+<style> 
+.medback{
+  background-image: url('../../img/medhome.png');
+  background-color: #cccccc;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+</style>
+<div class="medback">
 <div class="wrapper wrapper--w790">
   <div class="card card-5">
     <div class="card-heading">
@@ -48,20 +56,20 @@ if (!isset($_SESSION['username'])) {
         ?>
         <div>
           <center>
-            <button class="btn btn--radius-2 btn--black"> <a href="medicineList.php">Medicine List</a></button>
+            <button class="med-btn"> <a href="medicineList.php">Medicine List</a></button>
           </center>
         </div>
         <?php
       } elseif ($_SESSION['usertype'] == 2) { ?>
         <div>
           <center>
-            <button class="btn btn--radius-2 btn--black"> <a href="addMedicine.php">Add Medicine</a></button>
+            <button class="med-btn"> <a href="addMedicine.php">Add Medicine</a></button>
           </center>
         </div>
         <br></br>
         <div>
           <center>
-            <button class="btn btn--radius-2 btn--black"> <a href="medicineList.php">Manage Medicine</a></button>
+            <button class="med-btn"> <a href="medicineList.php">Manage Medicine</a></button>
           </center>
         </div> 
         <?php
@@ -70,9 +78,8 @@ if (!isset($_SESSION['username'])) {
     </div>
   </div>
 </div>
-
-
 </section>
+</div>
 
 <!--FOOTER-->
 <div class="footer">

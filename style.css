@@ -285,7 +285,7 @@ h2 {
 
 .buy-btn {
   display:inline-block;
-  background-color: black;
+  background-color: #000000;
   border-radius: 6px;
   font-size: 16px;
   color: #FFFFFF;
@@ -295,6 +295,7 @@ h2 {
 .buy-btn:hover {
   background-color: silver;
 }
+
 
 .hotel-page{
   font-size: 19px;
@@ -414,4 +415,22 @@ label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   
+}
+
+
+/*new button design for the buttons in medical modules in order to 
+create a consistent theme to provide better user interface*/
+
+.med-btn {
+  display:inline-block;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 30px 15px;
+}
+.med-btn:hover {
+  background-color: silver;
 }

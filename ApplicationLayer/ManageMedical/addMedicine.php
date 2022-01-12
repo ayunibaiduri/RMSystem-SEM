@@ -36,9 +36,20 @@ input {
         </div>
       </div>
     </div>
-
-
   </div>
+
+  <style> 
+  .medback{
+  background-image: url('../../img/medhome.png');
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+</style>
+<div class="medback">
+  
   <section class="type__category__area bg--white section-padding">
     <div class="wrapper wrapper--w790">
       <div class="card card-5">
@@ -47,46 +58,52 @@ input {
         </div>
         <div class="card-body">
           <form action="" method="POST">
-		  <div class='form-row'>
+		  
+        <div class='form-row'><br>
               <div class='name'>ID: </div>
-              <div class='value'>
+              <center><div class='value'>
                 <div class='input-group'>
                   <input type="text" name="details" class="input--style-5" required>
                 </div>
-              </div>
-            <div class='form-row'>
+              </div></center>
+
+        <div class='form-row'><br>
               <div class='name'>Name: </div>
-              <div class='value'>
+              <center> <div class='value'>
                 <div class='input-group'>
                   <input type="text" name="name" class="input--style-5" required>
                 </div>
               </div>
-            </div>
-            <div class='form-row'>
+            </div></center>
+
+        <div class='form-row'><br>
               <div class='name'>Details: </div>
-              <div class='value'>
+              <center><div class='value'>
                 <div class='input-group'>
                   <input type="text" name="details" class="input--style-5" required>
                 </div>
               </div>
-            </div>
-            <div class='form-row'>
+            </div></center>
+
+        <div class='form-row'><br>
               <div class='name'>Quantity: </div>
-              <div class='value'>
+              <center><div class='value'>
                 <div class='input-group'>
                   <input type="text" name="quantity" class="input--style-5" required>
                 </div>
               </div>
-            </div>
-            <div class='form-row'>
+            </div></center>
+
+        <div class='form-row'><br>
               <div class='name'>Price: </div>
-              <div class='value'>
+              <center><div class='value'>
                 <div class='input-group'>
                   <input type="text" name="price" class="input--style-5" required>
                 </div>
               </div>
-            </div>
-            <div class='form-row'>
+            </div></center>
+
+        <div class='form-row'><br>
               <div class='name'>Image: </div>
               <div class='value'>
                 <div class='input-group'>
@@ -94,15 +111,21 @@ input {
                 </div>
               </div>
             </div>
-            <div>
-              <center>
-                <button class="btn btn--radius-2 btn--black" type="submit" name="add" value="ADD"> Add</button>
-                <button class="btn btn--radius-2 btn--black" type="submit" name="reset" value="Reset"> Reset</button>
-              </center>
+        <div>
+              <br><center>
+                <button class="med-btn" type="submit" name="add" value="ADD"> Add</button>
+                <button class="med-btn" type="submit" name="reset" value="RESET"> Reset</button>
+                <br><br><br>
+
+            <!--add navigation button that can give users better access on the system-->
+            <button class ="med-btn"><a href="medicalHome.php">Back</a></button><br><br>
+
+            </center>
             </div>
           </form>
       </center>
     </section>
+</div>
 
 <!--FOOTER-->
 <div class="footer">
