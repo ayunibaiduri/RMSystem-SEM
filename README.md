@@ -1,4 +1,4 @@
-# RMS-SyatemSEM v.2.3 
+# RMS-SystemSEM v.2.3 
 
 Tools for maintenance of RMS System
 
