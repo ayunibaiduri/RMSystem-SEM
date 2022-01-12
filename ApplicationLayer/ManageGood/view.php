@@ -6,7 +6,7 @@ session_start();
 $good_id = $_GET['good_id'];
 $good = new goodController();
 $cart = new cartController();
-$data = $good->viewGood($good_id); 
+$data = $good->viewGood($good_id);     
 $name = $_GET['good_id'];   
 
   if (!isset($_SESSION['username'])) {
@@ -23,10 +23,6 @@ $name = $_GET['good_id'];
     if (isset($_POST ['delete'])) {
     $good->delete();
   }
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
