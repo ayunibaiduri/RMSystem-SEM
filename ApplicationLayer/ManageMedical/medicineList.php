@@ -29,19 +29,6 @@ $view_variable = 'a string here';
     <?php 
     include "../../includes/header.php";
     ?>  
-<div style="background-image: url('../../img/medhome.png');">
-    <div class="ht__bradcaump__wrap d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="bradcaump__inner text-center">
-              <h2 class="title">Medicine List</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-	</div>
-  </div>
 </div></div>
 
 <!--new style for the background that consistent with the theme for the medica section-->
