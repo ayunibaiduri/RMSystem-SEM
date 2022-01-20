@@ -85,25 +85,33 @@ INSERT INTO `customer` (`customer_id`, `customer_name`, `customer_email`, `custo
 --
 
 CREATE TABLE `food` (
-  `food_id` int(11) NOT NULL,
-  `sp_id` int(11) NOT NULL,
-  `food_name` varchar(50) NOT NULL,
-  `food_details` varchar(255) NOT NULL,
-  `food_price` decimal(10,0) NOT NULL,
-  `food_image` text NOT NULL
+  `food_id` int(10) NOT NULL,
+  `food_name` varchar(100) NOT NULL,
+  `food_type` varchar(100) NOT NULL,
+  `food_description` varchar(200) NOT NULL,
+  `food_price` float NOT NULL,
+  `image` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `food`
 --
 
-INSERT INTO `food` (`food_id`, `sp_id`, `food_name`, `food_details`, `food_price`, `food_image`) VALUES
-(20, 3, 'KFC Fried Chiken', '6 pcs KFC Fried chiken ', '35', '/rms/img/Food/friedChiken.jpeg'),
-(21, 3, 'KFC Double Cheese Burger', '2 pcs Chiken Meet 1 slice of cheese', '20', '/rms/img/Food/doubleChesseBurger.png'),
-(23, 3, 'KFC Diner Meal Set B', '2 pcs of chiken, 1 tin of pepsi, 1 medium mashed potato, 1 medium coslow', '13', '/rms/img/Food/dinermeal.jpeg'),
-(24, 3, 'Nasi Lemak Sedap', 'Rice, Sambal, cucumber, ikan bilis', '15', '/rms/img/Food/nasilemak.jpeg'),
-(25, 3, 'KFC zinger meal', '2 pcs of chicken, medium size mashed potato, medium soda ', '15', '/rms/img/Food/kfc.png'),
-(26, 3, 'Nasi Lemak Berapi', 'medium rice, ikan bilis, sambal udang', '5', '/rms/img/Food/nasilemak.jpeg');
+INSERT INTO `food` (`food_id`, `food_name`, `food_type`, `food_description`, `food_price`, `image`) VALUES
+(3, 'APPETIZER', 'Cheezy Chicken', 'Fried chicken with melted cheese', '9', '1608573733deli.jpg'),
+(4, 'APPETIZER', 'Easter Toast', 'Toast top with egg poach & bacon', '12', '1608574007egg.jpg'),
+(5, 'MAIN DISH', 'Rodeo Burger', 'Beef / lamb burger with onion ring', '23', '1608574207burger.jpg'),
+(6, 'MAIN DISH', 'Tom Yum', 'Tom yum vermecelli noodeles soup', '15', '1608574388tomyam.jpg'),
+(7, 'DRINK', 'Strawberry Limeade', 'Sparkling strawberry drink', '7', '1608574587drinkstraw.jpg'),
+(8, 'DESSERT', 'Waffle', 'mLight & crispy waffles', '9', '1608574685aiskrimbunga.jpg');
+(9, 'DESSERT', 'Cheese Cake', 'Signature mango cheese cake', '10', '1608578780ciskek.jpg');
+(11, 'MAIN DISH', 'Nasi Lemak', 'Rice cooked in coconut milk & pandan leaf', '8', '1608658096nasilemak.jpg');
+(13, 'DRINK', 'Milkshake', 'Vanilla milkshake', '6', '1608659101milk.jpg');
+(14, 'DESSERT', 'Puffs', 'Doughnut puffs with cream', '6', '1608659261159455356917920-doughnut-puffs-600x600.jpg');
+(15, 'MAIN DISH', 'Spaghetti', 'Roman-style spaghetti clla carrettiera', '14', '160865937120200224-carretteira-pasta-vicky-wasik-21.jpg');
+(16, 'DRINK', 'Tea', 'Earl grey tea', '4', '1608659540download.jpg');
+(17, 'DRINK', 'Carbonated Beverages', 'Coke/Sprite/Fanta/7Up', '5', '1608659655file-20180529-80633-frs1je.jpg');
+(18, 'APPETIZER', 'Chicken Bites', 'Pop corn chicken with mayo & ketchup', '6', '1608659802image.jpg');
 
 -- --------------------------------------------------------
 
