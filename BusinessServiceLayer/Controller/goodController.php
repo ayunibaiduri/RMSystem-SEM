@@ -14,7 +14,7 @@ class goodController{
         $good->price = $_POST['price'];
         $good->image = $_POST['image'];   
         if($good->addGood() > 0){
-          $message = "Medicine Successfully Added!";
+          $message = "Good Successfully Added!";
 		echo "<script type='text/javascript'>alert('$message');
 		window.location = '../../ApplicationLayer/ManageGood/goodList.php';</script>";
         }
